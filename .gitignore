@@ -1,6 +1,6 @@
 # Data
-www/application/app_cache/
-!.gitkeep
+www/application/app_cache/*
+!www/application/app_cache/.gitkeep
 www/application/configs/application.ini
 www/application/configs/config.php
 www/sitemap.xml

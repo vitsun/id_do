@@ -1,0 +1,11 @@
+
+RewriteEngine On
+RewriteRule ^.*google32d25acf40820eb3\.html$ google32d25acf40820eb3.html [NC,L]
+RewriteRule ^.*yandex_6a780a81f45cdb0c\.txt$ yandex_6a780a81f45cdb0c.txt [NC,L]
+RewriteRule ^.*wmail_4c07019cf9bae1c1\.html$ wmail_4c07019cf9bae1c1.html [NC,L]
+RewriteRule ^.*BingSiteAuth\.xml$ BingSiteAuth.xml [NC,L] 
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php [NC,L]

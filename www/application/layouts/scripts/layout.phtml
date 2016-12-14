@@ -1,0 +1,28 @@
+<?php
+$this->setEncoding('windows-1251');
+?>
+<?= $this->partial('header.phtml'); ?>
+<body>
+    <script>var domain_path = '<?= DOMAIN_PATH ?>';</script>
+    <div class="main_body">
+        <?= $this->partial('top.phtml'); ?>
+        <div class="basket">
+            <?= $this->partial('basket_partial.phtml'); ?>
+        </div>
+        <div>
+            <?= $this->partial('left.phtml'); ?>
+            <div style="float: left;width: 780px;">
+                <div class="content">			
+                    <?php echo $this->layout()->content ?>
+                </div>
+                <?php echo $this->action('get-visited-toys-scrollbar', 'toy'); ?>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <?= $this->partial('footer.phtml'); ?>
+    </div>
+    <script src="<?= DOMAIN_PATH . '/js/main_script.js' ?>"></script>
+    <script src="<?= DOMAIN_PATH . '/js/jquery.qtip-1.0.0-rc3.min.js' ?>"></script>
+</body>
+</html>

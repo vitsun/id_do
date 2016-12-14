@@ -1,0 +1,16 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<link href="<?= DOMAIN_PATH ?>/images/favicon.ico" rel="shortcut icon" />
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+		<?php $this->HeadMeta()->appendName('keywords','игры,игрушки,куклы,машинки,игровые наборы,роботы,конструкторы,мягкие игрушки'); ?>
+		<?php echo $this->HeadMeta(); ?>
+		<?php echo $this->headTitle('Игрушки деткам.РУ - Интернет-магазин детских игрушек')->setSeparator(' / '); ?>
+		<?php $this->headLink()->appendStylesheet(DOMAIN_PATH.'/css/style.css') ?>
+		<?php echo $this->headLink()->appendStylesheet(DOMAIN_PATH.'/css/visited_toolbar.css') ?>
+		<?php echo $this->headScript()->appendFile(DOMAIN_PATH.'/js/jquery-1.4.4.min.js','text/javascript',array()); ?>
+		<?php echo $this->headScript()->appendFile(DOMAIN_PATH.'/js/jquery.tools.min.js','text/javascript',array()); ?>
+<!--
+		<?php echo $this->headScript()->appendFile(DOMAIN_PATH.'/js/main_script.js','text/javascript',array()); ?>
+-->
+	</head>

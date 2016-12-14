@@ -1,0 +1,21 @@
+<?php
+	$this->setEncoding('windows-1251');
+?>
+<?= $this->partial('header.phtml'); ?>
+<body>
+	<script>var domain_path='<?= DOMAIN_PATH ?>';</script>
+	<div class="main_body">
+		<?= $this->partial('top.phtml'); ?>
+		
+		<div>
+			<div class="content" style="width: 900px;margin-left: 50px;font-size: 11px;">
+				<?php echo $this->layout()->content ?>
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+		
+		<?= $this->partial('footer.phtml'); ?>
+	</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<style>
+    .comm_form {
+        margin-top: 20px;
+        width: 500px;
+    }
+    .comm_form_title {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .comm_form_line {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    .comm_form_label  {
+        float: left;
+        width: 100px;
+    }
+    .comm_form_input {
+        float: left;
+        width: 400px;
+    }
+
+    .comm_form_input input {
+        width: 397px;
+        border: 1px solid #C7C7C7;
+    }
+
+    .comm_form_input textarea {
+        width: 397px;
+        border: 1px solid #C7C7C7;
+    }
+    .b_submit {
+        float: right;
+        margin-top: 3px;
+    }
+</style>
+
+<form method="POST" class="comm_form" id="comm_form">
+    <div class="comm_form_title">Написать свой отзыв</div>
+    <div class="comm_form_line">
+        <div class="comm_form_label">Имя</div>
+        <div class="comm_form_input"><input name="comm_name" value="<?= iconv('utf-8', 'cp1251', (@$_COOKIE['comm_name'] ? $_COOKIE['comm_name'] : '')) ?>"/></div>
+        <div class="clear"></div>
+    </div>
+    <div class="comm_form_line">
+        <div class="comm_form_label">Текст отзыва</div>
+        <div class="comm_form_input"><textarea name="comm_text"></textarea></div>
+        <div class="clear"></div>
+    </div>
+    <div class="but"><input id="b_submit" class="b_submit b_button" type="button" value="Сохранить"/></div>
+    <div class="clear"></div>
+</form>

@@ -1,0 +1,31 @@
+<?php
+//print_r($this->clicks);
+?>
+<form method="GET">
+	<select name="period_type" onchange="this.form.submit();">
+		<?php foreach ($this->ar_periods as $key=>$val) { ?>
+			<option <?= ($this->period_type == $key ? 'selected="selected"' : '') ?> value="<?= $key ?>"><?= $val ?></option>
+		<?php } ?>
+	</select>
+	<span style="padding: 5px;background-color: #FFF9D4;font-weight: bold;">Period: from <?= date('d.m.Y',$this->date_begin) ?> to <?= date('d.m.Y',$this->date_end) ?></span>
+</form>
+<table border="1">
+	<tr>
+		<th>Datetime</th>
+		<th>User UID</th>
+		<th>Url</th>
+		<th>Name</th>
+		<th>Price</th>
+		<th>Picture</th>
+	</tr>
+<?php foreach($this->clicks as $click) { ?>
+	<tr>
+		<td><?= date('d.m.Y H:i:s',$click['clicks_datetime']); ?></td>
+		<td><?= ($click['clicks_user_uid'] ? $click['clicks_user_uid'] : '&nbsp;') ?></td>
+		<td><a href="<?= $click['clicks_url'] ?>"><?= $click['clicks_url'] ?></a></td>
+		<td><?= $click['toy_name'] ?></td>
+		<td><?= $click['toy_price'] ?></td>
+		<td><?= ($click['toy_picture'] ? '<img width="80" src="'.$click['toy_picture'].'">' : '') ?></td>		
+	</tr>
+<?php } ?>
+</table>

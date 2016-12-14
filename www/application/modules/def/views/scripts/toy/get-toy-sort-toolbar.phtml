@@ -1,0 +1,55 @@
+<?php
+	$ar_order_names = array(
+		'rating' => 'по популярности',
+		'price' => 'по цене',
+		'relevance' => 'по релевантности'
+	);
+	foreach ($this->ar_order as $item) {
+		$ar_order[$item] = $ar_order_names[$item];
+	}
+	$ar_limit_max = 5;
+	$url = parse_url($_SERVER['REQUEST_URI']);
+?>
+<div class="list_params">
+	<div class="list_sort">
+		Сортировать:&nbsp;
+		<?php $ar_get = $_GET;
+		foreach ($ar_order as $key => $val) {
+			$ar_get['order'] = $key;
+			if ($key == 'relevance') {
+				if ($this->order == 'relevance') {
+					echo '<span class="selected_sort" style="margin: 0px 2px 0px 7px;">'.$val.'</span>';
+				} else {
+					$ar_get['orderby'] = 'desc';
+					echo '<a rel="nofollow" href="'.DOMAIN_PATH.$url['path'].'?'.from_ar_to_url($ar_get).'">'.$val."</a>";
+				}
+			} elseif ($this->order == $key) {
+				$ar_get['orderby'] = ($this->orderby == 'asc' ? 'desc' : 'asc');
+				echo '<a rel="nofollow" class="selected_sort" href="'.DOMAIN_PATH.$url['path'].'?'.from_ar_to_url($ar_get).'">'.$val.'</a><img align="absmiddle" border=0 src="'.DOMAIN_PATH.'/images/'.($this->orderby == 'asc' ? 'sort_up' : 'sort_down').'.png">';
+			} else {
+				$ar_get['orderby'] = 'desc';
+				echo '<a rel="nofollow" href="'.DOMAIN_PATH.$url['path'].'?'.from_ar_to_url($ar_get).'">'.$val."</a>";
+			}
+		} ?>
+	</div>
+	<?php $ar_get = $_GET;unset($ar_get['show']); ?>
+	<div class="list_show">
+		<noindex>
+			<a href="<?= DOMAIN_PATH.$url['path'].'?'.from_ar_to_url($ar_get) ?>&show=list">
+				<img border=0 src="<?= DOMAIN_PATH.'/images/list_'.($this->show == 'list' ? '' : 'non').'active.png' ?>" title="В виде списка">
+			</a>
+			<a href="<?= DOMAIN_PATH.$url['path'].'?'.from_ar_to_url($ar_get) ?>&show=grid">
+				<img border=0 src="<?= DOMAIN_PATH.'/images/grid_'.($this->show == 'grid' ? '' : 'non').'active.png' ?>" title="В виде таблицы">
+			</a>
+		</noindex>
+	</div>
+	<div class="list_limit">
+		Показывать по:&nbsp;
+		<select name="pl" onchange="window.location='<?php $ar_get = $_GET;unset($ar_get['pl']);echo DOMAIN_PATH.$url['path'].'?'.from_ar_to_url($ar_get) ?>&pl='+this.value">
+			<?php for ($i=1;$i<=$ar_limit_max;$i++) {
+				echo '<option '.($i == $this->pl ? 'selected="selected"' : '').' value="'.$i.'">'.($i*20).'</option>';
+			} ?>
+		</select>
+	</div>
+	<div class="clear"></div>
+</div>

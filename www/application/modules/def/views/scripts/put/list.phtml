@@ -1,0 +1,110 @@
+<?php
+$this->headTitle($this->h1);
+$this->headMeta()->appendName('description', META_DESCRIPTION . $this->descr);
+if ((isset($this->to_basket)) && (count($this->to_basket) > 0)) {
+    echo "<script>";
+    echo "var ar_to_basket = [" . implode(",", $this->to_basket) . "];";
+    echo "</script>";
+}
+?>
+<h1><?= $this->h1 ?></h1>
+<?php if (count($this->toys) > 0) { ?>
+    <form method="POST" action="<?= $this->url(array("action" => "list", "controller" => "put"), null, true) ?>">
+        <div>
+            <?php foreach ($this->toys as $toy) { ?>
+                <div class="tovar_box">
+                    <div style="float: left;margin-top:30px;width:25px;" class="choose_put">
+                        <input type="checkbox" id="ch_<?= $toy['id'] ?>" name="ch[<?= $toy['id'] ?>]" onclick="check_one_put(this);" <?= (isset($_GET['check_all']) || (@in_array($toy['id'], $this->to_basket)) ? 'checked' : '') ?>>
+                    </div>
+                    <div style="float: left;" class="zoom">
+                        <a href="<?php echo $this->url(array("action" => "detail", "controller" => "toy", "toy_id" => $toy['id']), null, true) ?>">
+                            <img id="<?= $toy['id'] ?>" class="tovar_img" src="<?= ($toy['picture'] ? $toy['picture'] : DOMAIN_PATH . '/images/no_photo.png') ?>" width="80" align="left" alt="<?= $toy['name'] ?>" style="border: 1px solid white;">
+                            <img id="<?= $toy['id'] ?>_big" class="tovar_img" src="<?= $toy['picture'] ?>" style="display:none;position:absolute;border: 1px solid black;">
+                        </a>
+                    </div>
+                    <div class="tovar_description" style="width: 495px;">
+                        <h2><a href="<?php echo $this->url(array("action" => "detail", "controller" => "toy", "toy_id" => $toy['id']), null, true) ?>"><?= $toy['name'] ?></a></h2>
+                        <div style="margin: 10px 0px;">
+                            <?= ($toy['series'] && $toy['series'] != '-' ? '(' . $toy['series'] . ')' : '') ?>
+                        </div>
+                        <div>
+                            <?= ($toy['description'] ? nl2br(substr($toy['description'], 0, 200)) . ' ...' : '') ?>
+                        </div>
+                    </div>
+                    <div class="tovar_price">
+                        <?= $toy['price'] ?> руб.
+                    </div>
+                    <div style="float: left;">
+                        <div class="but b_buy_list_but"><input id="<?= $toy['id'] ?>_bt_buy" class="b_button b_buy_in_list" value="Купить" type="button" onclick="try_buy(<?= $toy['id'] ?>);"></div>
+                        <div id="<?= $toy['id'] ?>_st" style="float:left;"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            <?php } ?>
+            <div class="check_actions">
+                <img src="<?= DOMAIN_PATH ?>/images/arrow.png" width="38" height="22" align="middle"><a rel="nofollow" href="<?php echo make_new_url($_SERVER['REQUEST_URI'], array('check_all' => '1'), array()) ?>" onclick="if (check_all_put(true))
+                                return false;">Отметить все</a>&nbsp;/&nbsp;<a rel="nofollow" href="<?php echo make_new_url($_SERVER['REQUEST_URI'], array(), array('check_all')) ?>" onclick="if (check_all_put(false))
+                                            return false;">Снять выделение</a>
+                <select name="put_check_action">
+                    <option value="0">С отмеченными:</option>
+                    <option value="1">Удалить</option>
+                    <option value="2">В корзину</option>
+                </select>
+                <input type="submit" value="OK">
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+        var timer_id;
+        var cur_div;
+        $(function () {
+            $('.zoom').hover(function () {
+                cur_div = $(this);
+                cur_div.find('img:first').css('border', '1px dotted #FF7903');
+                timer_id = setTimeout(function () {
+                    timer_id = 0;
+
+                    var img_small = cur_div.find('img:first');
+                    var id = img_small.attr('id');
+                    var img_big = $('#' + id + '_big');
+                    img_big.css('display', '');
+                    img_big.removeAttr('width');
+                    img_big.css('width', '');
+                    var big_width = img_big.width();
+                    var big_height = img_big.height();
+                    img_big.width('80');
+                    img_big.css('left', cur_div.position().left);
+                    img_big.css('top', cur_div.position().top);
+
+                    var new_left = cur_div.position().left - (big_width - img_small.width()) / 2;
+                    var new_top = cur_div.position().top - (big_height - img_small.height()) / 2;
+
+                    img_big.stop().animate({width: big_width + "px", left: new_left + "px", top: new_top + "px"}, 400);
+                }, 500);
+            },
+                    function () {
+                        cur_div.find('img:first').css('border', '1px solid white');
+                        if (timer_id) {
+                            clearTimeout(timer_id);
+                        } else {
+                            var id = $(this).find('img:first').attr('id');
+                            var img_big = $('#' + id + '_big');
+                            var big_width = img_big.width();
+                            var new_left = $(this).position().left;
+                            var new_top = $(this).position().top;
+                            img_big.stop().animate({width: "80px", left: new_left + "px", top: new_top + "px"}, 400, null, function () {
+                                img_big.css('display', 'none');
+                                img_big.width(big_width);
+                            });
+                        }
+                    });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            test_all_put();
+            try_buy_from_put();
+        });
+    </script>
+<?php } ?>

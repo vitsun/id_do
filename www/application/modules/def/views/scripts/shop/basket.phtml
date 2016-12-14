@@ -1,0 +1,12 @@
+<?php
+	$this->headTitle('Корзина');
+?>
+<script type="text/javascript">
+var myShopPartnerId = '<?= $this->partner_id ?>';
+var myShopExternalCSS = '';
+var myShopClearCartURL = '';
+document.write('<scr'+'ipt type="text/javascript" charset="windows-1251" src="http://p.my-shop.ru/order?form=JS_embed&partner='+myShopPartnerId+'&'+location.search.substring(1)+(myShopExternalCSS?'&extcss='+encodeURIComponent(myShopExternalCSS):'')+(myShopClearCartURL?'&clearcart='+encodeURIComponent(myShopClearCartURL):'')+'&nocache='+Math.ceil(Math.random()*1000000)+'"></sc'+'ript>');
+</script>
+<script>
+$('#myShopOrderIframe').css('height','3500px');
+</script>

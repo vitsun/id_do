@@ -1,0 +1,14 @@
+<div style="margin-top: 10px;border: 1px solid #C7C7C7; background-color: #F1F1F1; font-size: 10px;padding: 3px;">
+<b>Реклама</b><br>
+<?php
+     if (!defined('_SAPE_USER')){
+        define('_SAPE_USER', '8777aff7a9faec05e5e795a6bdfb7e82');
+     }
+     require_once($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php');
+//$o['force_show_code'] = true;
+$o['host'] = 'igrushki-detkam.ru';
+     $sape = new SAPE_client($o);
+     echo $sape->return_links();
+unset($o);
+?>
+</div>

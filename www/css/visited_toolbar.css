@@ -1,0 +1,87 @@
+.scroll_toys a.browse {
+	display:block;
+	width:18px;
+	height:18px;
+	float:left;
+	mmargin: 20px 10px 20px 10px;
+	cursor:pointer;
+	font-size:1px;
+}
+
+.scroll_toys a.right {
+	background:url('/images/right.png') no-repeat;
+	clear:right;
+	margin: 20px 10px 0px 5px;
+}
+
+.scroll_toys a.right:hover {
+	background-position: 0px -18px;
+}
+
+.scroll_toys a.left {
+	background:url('/images/left.png') no-repeat;
+	clear:right;
+	margin: 20px 5px 0px 10px;
+}
+
+.scroll_toys a.left:hover {
+	background-position: 0px -18px;
+}
+
+.scrollable {
+	position:relative;
+	overflow:hidden;
+	width: 700px;
+	h_height:90px;
+	float: left;
+}
+
+.scrollable .items {
+	width:20000em;
+	position:relative;
+}
+
+.items divvv {
+	float:left;
+}
+
+.scrollable img {
+	margin: 0px 7px 0px 7px;
+	border: 0;
+}
+
+.scroll_toys a.disabled {
+	visibility:hidden !important;		
+}
+
+.sscroll_toys a.browse {
+	visibility:hidden !important;		
+}
+
+.visited_tovar_box {
+	width: 94px;
+	font-size: 10px;
+	float: left;
+	overflow: hidden;
+}
+
+.visited_tovar_box a {
+	color: black;
+}
+
+.visited_tovar_box_descr {
+	margin: 0px 7px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.item_slide {
+	float:left;
+}
+
+.visited_tovar_box_price {
+	text-align: center;
+	color: #FF7903;
+	margin-top: 10px;
+	font-weight: bold;
+}

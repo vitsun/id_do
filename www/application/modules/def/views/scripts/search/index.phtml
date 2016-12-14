@@ -1,0 +1,33 @@
+<form method=GET action="<?php echo $this->url(array("action" => "begin-search", "controller" => "search"),null,true) ?>">
+<input id="eee" class="search_text" type="text" name="search" value="<?= htmlspecialchars($this->search_text) ?>">&nbsp;<div class="but"><input class="submit" type="submit" value="Найти"></div>
+<input type="hidden" name="order" value="relevance">
+<input type="hidden" name="orderby" value="desc">
+</form>
+<script>
+	var sb_checked = false;
+	var si = $("#eee");
+	<?php if (isset($_GET['search'])) { ?>
+		sb_checked = true;
+	<?php } ?>
+
+	if (sb_checked) {
+		si.css('color','#000000');
+	} else {
+		si.css('color','#AAAAAA');
+	}
+	si.click (function() {
+			if (sb_checked == false) {
+				si.val('');
+				si.css('color','#000000');
+				sb_checked = true;
+			}
+		});
+
+	si.focusout (function() {
+		if (si.val() == '') {
+			si.val('поиск');
+			si.css('color','#AAAAAA');
+			sb_checked = false;
+		}
+	});
+</script>

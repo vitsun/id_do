@@ -1,0 +1,90 @@
+<?php
+//print_r($_SERVER);
+//print_r($this->getRequest()->getBaseUrl());
+$this->headTitle('Купить с доставкой');
+$this->headTitle($this->toy['name']);
+$this->headMeta()->appendName('description', META_DESCRIPTION . ' В том числе ' . $this->toy['name'] . '.');
+$this->headLink()->appendStylesheet(DOMAIN_PATH . '/css/style_addon.css');
+
+if (isset($_COOKIE['pt'])) {
+    $ar_put_toys = explode(',', $_COOKIE['pt']);
+    $is_put = in_array($this->toy['id'], $ar_put_toys);
+} else {
+    $is_put = false;
+}
+
+$Product = new Product();
+$ar_new_toys = $Product->get_all_new_products();
+$ar_popular_toys = $Product->get_popular_products();
+
+$c_avatar = 0;
+?>
+<div itemscope itemtype="http://data-vocabulary.org/Product">
+    <h1 itemprop="name"><?= $this->toy['name'] ?></h1>
+    <?= (!in_array(trim($this->toy['series']), array('-', '')) ? '<h2>(' . $this->toy['series'] . ')</h2>' : '') ?>
+    <div style="margin-top: 10px;">
+        <div style="float: left;">
+            <div class="tovar_detail_box">
+                <?php
+                if (in_array($this->toy['id'], $ar_new_toys)) {
+                    echo '<div style="position: relative;margin-left:0px;margin-bottom:-34px;"><img alt="Новинка" title="Новинка" src="' . DOMAIN_PATH . '/images/new.png"></div>';
+                    $c_avatar++;
+                }
+                if (in_array($this->toy['id'], $ar_popular_toys)) {
+                    echo '<div style="position: relative;margin-left:' . (33 * $c_avatar) . 'px;margin-bottom:-34px;"><img alt="Хит продаж" title="Хит продаж" src="' . DOMAIN_PATH . '/images/top_rated.png"></div>';
+                    $c_avatar++;
+                }
+                ?>
+                <img src="<?= ($this->toy['picture'] ? $this->toy['picture'] : DOMAIN_PATH . '/images/no_photo.png') ?>" align=left hspace=8 vspace=2 border=0 itemprop="image">
+                <div itemprop="description"><?= nl2br($this->toy['description']) ?></div>
+            </div>
+            <div class="clear"></div>
+            <div style="margin-top: 20px;font-size: 12px;">
+                Производитель: <span itemprop="brand"><?= $this->toy['producer'] ?></span>
+            </div>
+            <?php echo $this->action('index', 'comments', 'services', array('toy_id' => $this->toy['id'])); ?>
+        </div>
+        <div class="tovar_detail_right" itemprop="offerDetails" itemscope itemtype="http://data-vocabulary.org/Offer">
+            <FORM action="http://p.my-shop.ru/order" method="POST" id="f_detail_toy"><meta itemprop="currency" content="RUB" />
+                <div class="tovar_price_detail" style="margin: 0px 0px 5px 0px;"><span itemprop="price"><?= $this->toy['price'] ?></span> руб.</div>
+                <div class="tovar_available">
+                    <span style="font-weight: bold;font-size: 14px;">Наличие:&nbsp;</span>
+                    <img id="img_available" src="/images/loading.gif" border="0">
+                </div>
+                <div>
+                    <input type="hidden" name="action" value="cartAddItem">
+                    <input type="hidden" name="partner" value="<?= $this->partner_id ?>">
+                    <input size="5" type="text" value="1" maxlength="3" name="quantity">
+                    <input type="hidden" name="item" value="<?= $this->toy['id'] ?>">
+                    <div class="but b_button_disabled"><input class="b_button b_button_disabled" id="btApply" disabled type="button" value="В корзину" onclick="post_click(<?= $this->toy['id'] ?>);
+                            setTimeout(function () {
+                                document.getElementById('f_detail_toy').submit();
+                            }, 500);"></div>
+                </div>
+                <div id="<?= $this->toy['id'] ?>_bt_put" class="put_box" style="margin-left: 77px;">
+                    <?php if ($is_put) { ?>
+                        <span class="put_text_disabled">Отложено</span>
+                    <?php } else { ?>
+                        <a rel="nofollow" href="<?php echo make_new_url($_SERVER['REQUEST_URI'], array('put_id' => $this->toy['id']), array()) ?>" class="put_text_enabled" onclick="if (try_put(<?= $this->toy['id'] ?>))
+                                        return false;">Отложить</a>
+                       <?php } ?>
+                </div>
+                <div id="<?= $this->toy['id'] ?>_put_st" style="float:left;">
+                    <?php if ($is_put) { ?>
+                        <a rel="nofollow" href="<?= DOMAIN_PATH ?>/put/list"><img src="<?= DOMAIN_PATH ?>/images/put.png" title="Все отложенные" class="img_st_in_list"></a>
+                    <?php } ?>
+                </div>
+            </FORM>
+        </div>
+        <div style="float: left;width: 260px;margin-left: 10px;">
+            <div id="good_addon" class="good_addon"></div>
+        </div>
+        <div class="clear"></div>
+        <div style="margin-top: 0px;">
+            <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+            <div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="button" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir,lj"></div>
+        </div>
+    </div>
+</div>
+<script>var toy_id =<?= $this->toy['id'] ?>;</script>
+<script src="<?= DOMAIN_PATH ?>/js/tumb_pict.js"></script>

@@ -1,0 +1,48 @@
+<?php
+//print_r($this->comments);
+?>
+<div id="comments_form"></div>
+<style>
+    .comm_one {
+        margin: 0px 0px 10px 0px;
+        background-color: #F8F8F8;
+        width: 500px;
+        font-size: 12px;
+    }
+    .comm_who {
+        background-color: #F2F2F2;
+        padding: 3px 5px;
+    }
+    .comm_who_name {
+        float: left;
+        width: 350px;
+    }
+    .comm_who_time {
+        float: right;
+        font-size: 10px;
+    }
+    .comm_text {
+        padding: 3px 5px;
+    }
+    .comm_div {
+        margin: 20px 0px 20px 0px;
+    }
+    .comm_title {
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+</style>
+<div class="comm_div" <?= (count($this->comments) > 0 ? '' : 'style="display: none;"') ?>>
+    <div class="comm_title">Îòçûâû</div>
+    <?php foreach ($this->comments as $comm) { ?>
+        <div class="comm_one">
+            <div class="comm_who">
+                <div class="comm_who_name"><?= htmlspecialchars($comm['comm_name'], ENT_COMPAT | ENT_HTML401, 'cp1251') ?></div>
+                <div class="comm_who_time"><?= date('d.m.Y H:i:s', $comm['comm_time']) ?></div>
+                <div class="clear"></div>
+            </div>
+            <div class="comm_text"><?= htmlspecialchars($comm['comm_text'], ENT_COMPAT | ENT_HTML401, 'cp1251') ?></div>
+        </div>
+    <?php } ?>
+</div>
+<script src="<?= DOMAIN_PATH ?>/js/main_comments.js"></script>

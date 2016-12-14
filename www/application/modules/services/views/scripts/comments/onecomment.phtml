@@ -1,0 +1,8 @@
+<div class="comm_one">
+    <div class="comm_who">
+        <div class="comm_who_name"><?= htmlspecialchars($this->comm['comm_name'], ENT_COMPAT | ENT_HTML401, 'cp1251') ?></div>
+        <div class="comm_who_time"><?= date('d.m.Y H:i:s', $this->comm['comm_time']) ?></div>
+        <div class="clear"></div>
+    </div>
+    <div class="comm_text"><?= htmlspecialchars($this->comm['comm_text'], ENT_COMPAT | ENT_HTML401, 'cp1251') ?></div>
+</div>

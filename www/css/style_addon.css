@@ -1,0 +1,114 @@
+.good_addon {
+	float: left;
+	width: 260px;
+	font-size: 10px;
+	overflow: hidden;
+	height: 250px;
+	margin-left: 5px;
+}
+
+.good_addon_o {
+	height: 100%;
+}
+
+.good_addon ul {
+	line-height: normal;
+	list-style: none outside none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.good_addon_name {
+	float: left;
+	width: 160px;
+}
+
+.good_addon_price {
+	float: left;
+	margin-left: 5px;
+	color: #FF7903;
+}
+
+.good_addon_name a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.good_addon_name a:hover {
+	text-decoration: none;
+}
+
+.good_addon_li {
+	float: left;
+	margin-bottom: 5px;
+}
+
+.good_addon_li:hover {
+	background-color: #E2E2E2;
+}
+
+.analog_title {
+	font-weight: bold;
+	font-size: 12px;
+	margin: 15px 0px 5px 0px;
+	float: left;
+	width: 160px;
+}
+
+.tumb_img {
+	position: absolute;
+	border: 1px solid #F1F1F1;
+	background-color: #F8F8F8;
+	padding: 5px;
+}
+
+.good_addon_img_pict {
+}
+
+.good_addon_price_pict {
+	color: #FF7903;
+	margin-bottom: 20px;
+	margin-top: 5px;
+}
+
+.good_addon_name_pict a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.good_addon_name_pict a:hover {
+	text-decoration: none;
+}
+
+.good_addon_li_pict {
+	width: 160px;
+}
+
+.open_title {
+	color: #555555;
+	display: block;
+	text-align: center;
+	width: 160px;
+	font-size: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	float: left;
+	border-top: 1px solid #C7C7C7;
+	position: relative;
+	top: -14px;
+	height: 20px;
+	line-height: 20px;
+}
+
+.open_title:hover {
+	background: url("/images/open_bt.png") no-repeat scroll 28px top transparent;
+}
+
+.open_title_shadow {
+	height: 14px;
+	width: 160px;
+	float: left;
+	position: relative;
+	top: -14px;
+	background: url("/images/hr.png") no-repeat scroll left top transparent;
+}

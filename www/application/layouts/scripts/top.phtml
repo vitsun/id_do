@@ -1,0 +1,21 @@
+<div class="top">
+	<div class="top_menu">
+		<ul>
+			<li><a href="<?= DOMAIN_PATH ?>">Главная</a></li>
+			<li><a rel="nofollow" href="<?= DOMAIN_PATH.'/shop/payment' ?>">Оплата</a></li>
+			<li><a rel="nofollow" href="<?= DOMAIN_PATH.'/shop/delivery' ?>">Доставка</a></li>
+			<li><a href="<?= DOMAIN_PATH.'/shop/discounts' ?>">Скидки</a></li>
+			<li><a rel="nofollow" href="<?= DOMAIN_PATH.'/shop/contacts' ?>">Контактная информация</a></li>
+			<li><a rel="nofollow" href="<?= DOMAIN_PATH.'/shop/basket' ?>" style="color: #FF7903;font-weight: bold;">Корзина</a></li>
+			<li id="li_put"<?= (isset($_COOKIE['pt']) ? '' : ' style="display:none;"') ?>><a rel="nofollow" href="<?= DOMAIN_PATH.'/put/list' ?>">Отложенные</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	<div class="logo">
+		<a href="<?= DOMAIN_PATH ?>">
+			<img src="<?= DOMAIN_PATH ?>/images/logo.gif" title="igrushki-detkam.ru Куча игрушек для детей" style="border:0px;">
+		</a>
+	</div>
+	<div class="search_box"><?php echo $this->action('index','search'); ?></div>
+	<div class="clear"></div>
+</div>

@@ -1,25 +1,8 @@
-# Composer files
-composer.phar
-vendor/
-
-# Local configs
-config/autoload/*.local.php
-
-# Binary gettext files
-*.mo
-
 # Data
-data/logs/
-data/cache/
-data/sessions/
-data/tmp/
-temp/
-
-#Doctrine 2
-data/DoctrineORMModule/Proxy/
-data/DoctrineORMModule/cache/
-
-
-# Legacy ZF1
-demos/
-extras/documentation
+www/application/app_cache/
+!.gitkeep
+www/application/configs/application.ini
+www/application/configs/config.php
+www/sitemap.xml
+www/sitemap_1.xml
+www/sitemap_2.xml

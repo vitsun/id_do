@@ -1,0 +1,31 @@
+<?php
+$min_level = $this->categories[0]['level'];
+?>
+
+<div class="left_menu">
+    <ul>
+        <?php
+        foreach ($this->categories as $category) {
+            if ($category['id'] == $this->current_id) {
+                $cur_cat = true;
+            } else {
+                $cur_cat = false;
+            }
+            ?>
+            <li style="margin-left:<?= ($category['level'] - $min_level) * 10 ?>px;">
+                <table border=0 cellpadding=0 cellspacing=0>
+                    <tr>
+                        <td valign=top>&#149;&nbsp;</td>
+                        <td valign=top>
+                            <?php if (($this->p_type == 'toy') || (!$cur_cat)) { ?>
+                                <a <?= ($cur_cat ? 'class="cur_cat"' : '') ?> href="<?php echo $this->url(array("action" => "detail-list", "controller" => "category", "cat_id" => $category['id']), null, true) ?>"><?= $category['name'] ?></a>&nbsp;(<?= @$category['c_count'] ?>)
+                            <?php } else { ?>
+                                <span class="cur_cat"><?= $category['name'] ?></span>&nbsp;(<?= @$category['c_count'] ?>)
+                            <?php } ?>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+        <?php } ?>
+    </ul>
+</div>

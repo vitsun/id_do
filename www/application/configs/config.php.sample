@@ -1,0 +1,4 @@
+<?php
+
+define('MAIN_DOMAIN', 'id.localhost');
+define('ZEND_PATH', dirname(dirname(dirname(dirname(dirname(dirname(dirname(__FILE__))))))) . '/libs');

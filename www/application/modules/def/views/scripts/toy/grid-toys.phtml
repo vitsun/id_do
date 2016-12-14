@@ -1,0 +1,125 @@
+<?php
+$this->headTitle($this->h1);
+$this->headMeta()->appendName('description', META_DESCRIPTION . $this->descr);
+$ar_put_toys = array();
+if (isset($_COOKIE['pt'])) {
+    $ar_put_toys = explode(',', $_COOKIE['pt']);
+}
+
+if ($this->list_type != 'top_new') {
+    $Product = new Product();
+    $ar_new_toys = $Product->get_all_new_products();
+    $ar_popular_toys = $Product->get_popular_products();
+}
+?>
+<h1><?= $this->h1 ?></h1>
+<?php
+if (($this->list_type == 'from_category') && (count($this->toys) > 0)) {
+    echo $this->action('get-toy-sort-toolbar', 'toy');
+}
+?>
+<div>
+    <?php
+    foreach ($this->toys as $toy) {
+        $c_avatar = 0;
+        ?>
+        <div class="tovar_box" style="width: 150px; height: 235px;margin-right: 0px;float: left;padding: 10px 2px;margin-top: 10px;">
+            <div class="zoom" style="width: 80px; height: 100px;">
+                <a href="<?php echo $this->url(array("action" => "detail", "controller" => "toy", "toy_id" => $toy['id']), null, true) ?>">
+                <!--<img id="<?= $toy['id'] ?>" class="tovar_img" src="<?= ($toy['picture'] ? $toy['picture'] : DOMAIN_PATH . '/images/no_photo.png') ?>" width="80" height="100" align="left" alt="<?= $toy['name'] ?>" style="border: 1px solid white;margin: 0px;">-->
+                    <img id="<?= $toy['id'] ?>" class="tovar_img" src="<?= ($toy['picture'] ? DOMAIN_PATH . '/services/images/data/img/' . $toy['id'] . '.jpg' : DOMAIN_PATH . '/images/no_photo.png') ?>" align="left" alt="<?= $toy['name'] ?>" style="border: 1px solid white;margin: 0px;">
+                    <img id="<?= $toy['id'] ?>_big" class="tovar_img" src="<?= $toy['picture'] ?>" style="display:none;position:absolute;border: 1px solid black;z-index: 100;margin: 0px;">
+                </a>
+            </div>
+            <div style="position: absolute;">
+                <?php
+                if ($this->list_type != 'top_new') {
+                    if (in_array($toy['id'], $ar_new_toys)) {
+                        echo '<div style="position: absolute;margin-left:-20px;margin-top:-110px;"><img alt="Новинка" title="Новинка" src="' . DOMAIN_PATH . '/images/new.png"></div>';
+                        $c_avatar++;
+                    }
+                    if (in_array($toy['id'], $ar_popular_toys)) {
+                        echo '<div style="position: absolute;margin-left:' . (-20 + 33 * $c_avatar) . 'px;margin-top:-110px;"><img alt="Хит продаж" title="Хит продаж" src="' . DOMAIN_PATH . '/images/top_rated.png"></div>';
+                        $c_avatar++;
+                    }
+                }
+                ?>
+            </div>
+            <div class="tovar_description" style="float: none;width: auto;margin: 10px 0px 10px 0px;height: 42px;overflow: hidden;">
+                <h2><a href="<?php echo $this->url(array("action" => "detail", "controller" => "toy", "toy_id" => $toy['id']), null, true) ?>"><?= $toy['name'] ?></a></h2>
+            </div>
+            <div id="lt_price_<?= $toy['id'] ?>" class="tovar_price" style="float: none;"><?= $toy['price'] ?> руб.</div>
+            <div>
+                <div class="but b_buy_list_but"><input id="<?= $toy['id'] ?>_bt_buy" class="b_button b_buy_in_list" value="Купить" type="button" onclick="try_buy(<?= $toy['id'] ?>);"></div>
+                <div id="<?= $toy['id'] ?>_st" style="float:left;"></div>
+                <div class="clear"></div>
+                <div id="<?= $toy['id'] ?>_bt_put" class="put_box">
+                    <?php if (in_array($toy['id'], $ar_put_toys)) { ?>
+                        <span class="put_text_disabled">Отложено</span>
+                    <?php } else { ?>
+                        <a rel="nofollow" href="<?php echo make_new_url($_SERVER['REQUEST_URI'], array('put_id' => $toy['id']), array()) ?>" class="put_text_enabled" onclick="if (try_put(<?= $toy['id'] ?>))
+                                            return false;">Отложить</a>
+                       <?php } ?>
+                </div>
+                <div id="<?= $toy['id'] ?>_put_st" style="float:left;">
+                    <?php if (in_array($toy['id'], $ar_put_toys)) { ?>
+                        <a rel="nofollow" href="<?= DOMAIN_PATH ?>/put/list"><img src="<?= DOMAIN_PATH ?>/images/put.png" title="Все отложенные" class="img_st_in_list"></a>
+                    <?php } ?>
+                </div>
+            </div>
+            <!--<div class="clear"></div>-->
+        </div>
+    <?php } ?>
+    <div class="clear"></div>
+    <?= ($this->paginator ? $this->paginationControl($this->paginator, 'sliding', 'pagination_control.phtml') : ""); ?>
+</div>
+<script type="text/javascript">
+    var timer_id;
+    var cur_div;
+    $(function () {
+        $('.zoom').hover(function () {
+            cur_div = $(this);
+            cur_div.find('img:first').css('border', '1px dotted #FF7903');
+            timer_id = setTimeout(function () {
+                timer_id = 0;
+
+                var img_small = cur_div.find('img:first');
+                var id = img_small.attr('id');
+                var img_big = $('#' + id + '_big');
+                if (img_big.attr('src') == '')
+                    exit;
+                img_big.css('display', '');
+                img_big.removeAttr('width');
+                img_big.css('width', '');
+                var big_width = img_big.width();
+                var big_height = img_big.height();
+                img_big.width(img_small.width());
+                img_big.css('left', cur_div.position().left);
+                img_big.css('top', cur_div.position().top);
+
+                var new_left = cur_div.position().left - (big_width - img_small.width()) / 2;
+                var new_top = cur_div.position().top - (big_height - img_small.height()) / 2;
+
+                img_big.stop().animate({width: big_width + "px", left: new_left + "px", top: new_top + "px"}, 400);
+            }, 500);
+        },
+                function () {
+                    cur_div.find('img:first').css('border', '1px solid white');
+                    if (timer_id) {
+                        clearTimeout(timer_id);
+                    } else {
+                        var img_small = cur_div.find('img:first');
+                        var id = img_small.attr('id');
+                        var img_big = $('#' + id + '_big');
+                        var big_width = img_big.width();
+                        var new_left = $(this).position().left;
+                        var new_top = $(this).position().top;
+                        img_big.stop().animate({width: img_small.width() + "px", left: new_left + "px", top: new_top + "px"}, 400, null, function () {
+                            img_big.css('display', 'none');
+                            img_big.width(big_width);
+                        });
+                    }
+                });
+    });
+</script>
+<script>var is_list = 1;</script>

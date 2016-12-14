@@ -1,0 +1,19 @@
+<?php
+	$t = @$_GET['t'];
+?>
+<div class="add_filters">
+<div class="add_filters_title">Дополнительный фильтр</div>
+<form action="<?= $this->url(array('page' => null)).'?'.from_ar_to_url($_GET) ?>">
+<table cellspacing="0" cellpadding="0" border="0">
+<?php foreach($this->filter_tags as $filter_tag) { ?>
+<tr>
+	<td><input class="add_filters_ch" id="ch_<?= $filter_tag['t_id'] ?>" type="checkbox" name="t[<?= $filter_tag['t_id'] ?>]" value="1" <?= (isset($t[$filter_tag['t_id']]) ? 'checked="checked"' : '') ?>></td>
+	<td><label for="ch_<?= $filter_tag['t_id'] ?>"><?= $filter_tag['t_name'].' ('.$filter_tag['p_count'].')' ?></label></td>
+</tr>
+<?php  } ?>
+</table>
+<div class="add_filters_reset"><a href="#" rel="nofollow" onclick="uncheck_filters();return(false);">Сбросить фильтр</a></div>
+<div class="but but_find_filter"><input type="submit" value="Найти" class="submit"></div>
+<div class="clear"></div>
+</form>
+</div>

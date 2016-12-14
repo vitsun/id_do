@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^([a-z0-9_]+).jpg[/]?$ index.php?file_name=$1 [L]

@@ -1,0 +1,20 @@
+<?php if ($this->pageCount > 1): ?>
+<div class="pagination-control">
+
+<?php if (isset($this->previous)): ?><a href="<?php echo $this->url(array('page' => $this->previous)).'?'.from_ar_to_url($_GET); ?>">&lt; Предыдущая</a>
+<?php endif; ?>
+ 
+<?php
+foreach ($this->pagesInRange as $page) {
+	if ($page != $this->current) {
+		echo '<a href="'.$this->url(array('page' => $page)).'?'.from_ar_to_url($_GET).'">'.$page."</a>&nbsp;";
+	}	else {
+		echo "<strong>".$page."</strong>&nbsp;";
+	}
+}
+?>
+<?php if (isset($this->next)): ?>
+<a href="<?php echo $this->url(array('page' => $this->next)).'?'.from_ar_to_url($_GET); ?>">Следующая &gt;</a>
+<?php endif; ?>
+</div>
+<?php endif; ?>

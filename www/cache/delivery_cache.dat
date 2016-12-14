@@ -1,0 +1,568 @@
+<table><tr><td><hr class="help"></div>
+Набор доступных способов доставки зависит от региона доставки. При оформлении заказа, как только вы укажете регион доставки, программа покажет вам все доступные для этого региона способы доставки, при этом для каждого способа будет указана стоимость доставки товаров, находящихся в этот момент в вашей корзине.<br><br>
+<u>Способы доставки по регионам</u>:<br><br>
+<table width="600px" border="0" cellspacing="1" cellpadding="3">
+<tr>
+<td bgcolor="#EFEFFF"><b>Регион доставки</b></td>
+<td align="center" bgcolor="#EFEFFF"><b>Кол-во<br>пунктов выдачи</b></td>
+<td align="center" bgcolor="#EFEFFF"><b>Кол-во<br>курьерских служб</b></td>
+<td align="center" bgcolor="#EFEFFF"><b>Доставка<br>"Почтой России"</b></td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_244?partner=4336"><b>Москва и Московская область</b></a></td>
+<td align="center" bgcolor="#F7F7FF">139</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_239?partner=4336"><b>Санкт-Петербург и Ленинградская область</b></a></td>
+<td align="center" bgcolor="#F7F7FF">43</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_201?partner=4336">Агинский Бурятский округ</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_202?partner=4336">Адыгея респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_203?partner=4336">Алтай респ.</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_204?partner=4336">Алтайский край</a></td>
+<td align="center" bgcolor="#F7F7FF">7</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_205?partner=4336">Амурская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_206?partner=4336">Архангельская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">6</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_207?partner=4336">Астраханская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">5</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_208?partner=4336">Байконур</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_209?partner=4336">Башкортостан респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">7</td>
+<td align="center" bgcolor="#F7F7FF">8</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_210?partner=4336">Белгородская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">5</td>
+<td align="center" bgcolor="#F7F7FF">4</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_211?partner=4336">Брянская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_212?partner=4336">Бурятия респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">4</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_213?partner=4336">Владимирская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">7</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_214?partner=4336">Волгоградская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">7</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_215?partner=4336">Вологодская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">4</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_216?partner=4336">Воронежская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">5</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_217?partner=4336">Дагестан респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_218?partner=4336">Еврейская авт. обл.</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_283?partner=4336">Забайкальский край</a></td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_219?partner=4336">Ивановская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_220?partner=4336">Ингушетия респ.</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_221?partner=4336">Иркутская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">5</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_222?partner=4336">Кабардино-Балкарская респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_223?partner=4336">Калининградская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_224?partner=4336">Калмыкия респ.</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_225?partner=4336">Калужская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">6</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_226?partner=4336">Камчатский край</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_227?partner=4336">Карачаево-Черкесская респ.</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_228?partner=4336">Карелия респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_229?partner=4336">Кемеровская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">12</td>
+<td align="center" bgcolor="#F7F7FF">4</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_230?partner=4336">Кировская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">4</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_231?partner=4336">Коми респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_232?partner=4336">Коми-Пермяцкий округ</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_233?partner=4336">Корякский округ</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_234?partner=4336">Костромская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_235?partner=4336">Краснодарский край</a></td>
+<td align="center" bgcolor="#F7F7FF">17</td>
+<td align="center" bgcolor="#F7F7FF">19</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_236?partner=4336">Красноярский край</a></td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">6</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_290?partner=4336">Крым респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_237?partner=4336">Курганская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_238?partner=4336">Курская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_240?partner=4336">Липецкая обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">4</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_241?partner=4336">Магаданская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_242?partner=4336">Марий Эл респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_243?partner=4336">Мордовия респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_245?partner=4336">Мурманская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_246?partner=4336">Ненецкий авт. округ</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_247?partner=4336">Нижегородская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">13</td>
+<td align="center" bgcolor="#F7F7FF">5</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_248?partner=4336">Новгородская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_249?partner=4336">Новосибирская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">9</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_250?partner=4336">Омская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">4</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_251?partner=4336">Оренбургская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">5</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_252?partner=4336">Орловская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_253?partner=4336">Пензенская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">6</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_254?partner=4336">Пермский край</a></td>
+<td align="center" bgcolor="#F7F7FF">5</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_255?partner=4336">Приморский край</a></td>
+<td align="center" bgcolor="#F7F7FF">8</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_256?partner=4336">Псковская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_257?partner=4336">Ростовская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">13</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_258?partner=4336">Рязанская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_259?partner=4336">Самарская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">12</td>
+<td align="center" bgcolor="#F7F7FF">4</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_260?partner=4336">Саратовская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">10</td>
+<td align="center" bgcolor="#F7F7FF">4</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_261?partner=4336">Саха (Якутия) респ.</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_262?partner=4336">Сахалинская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_263?partner=4336">Свердловская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">10</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_291?partner=4336">Севастополь</a></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_264?partner=4336">Северная Осетия - Алания респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_265?partner=4336">Смоленская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_266?partner=4336">Ставропольский край</a></td>
+<td align="center" bgcolor="#F7F7FF">6</td>
+<td align="center" bgcolor="#F7F7FF">4</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_267?partner=4336">Таймырский (Долгано-Ненецкий) округ</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_268?partner=4336">Тамбовская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_269?partner=4336">Татарстан респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">12</td>
+<td align="center" bgcolor="#F7F7FF">8</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_270?partner=4336">Тверская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_271?partner=4336">Томская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_273?partner=4336">Тульская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_272?partner=4336">Тыва респ.</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_274?partner=4336">Тюменская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">5</td>
+<td align="center" bgcolor="#F7F7FF">4</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_275?partner=4336">Удмуртская респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_276?partner=4336">Ульяновская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">5</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_277?partner=4336">Усть-Ордынский Бурятский округ</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_278?partner=4336">Хабаровский край</a></td>
+<td align="center" bgcolor="#F7F7FF">6</td>
+<td align="center" bgcolor="#F7F7FF">4</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_279?partner=4336">Хакасия респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_280?partner=4336">Ханты-Мансийский авт. округ</a></td>
+<td align="center" bgcolor="#F7F7FF">6</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_281?partner=4336">Челябинская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">8</td>
+<td align="center" bgcolor="#F7F7FF">3</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_282?partner=4336">Чеченская респ.</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_284?partner=4336">Чувашская респ.</a></td>
+<td align="center" bgcolor="#F7F7FF">6</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_285?partner=4336">Чукотский авт. округ</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_286?partner=4336">Эвенкийский округ</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_287?partner=4336">Ямало-Ненецкий авт. округ</a></td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF"><a href="http://my-shop.ru/my/helper_70/region_288?partner=4336">Ярославская обл.</a></td>
+<td align="center" bgcolor="#F7F7FF">5</td>
+<td align="center" bgcolor="#F7F7FF">2</td>
+<td align="center" bgcolor="#F7F7FF">+</td></tr>
+<tr>
+<td nowrap bgcolor="#F7F7FF">Другие страны</td>
+<td align="center" bgcolor="#F7F7FF"></td>
+<td align="center" bgcolor="#F7F7FF">1 (<a href="#7">TNT</a>)</td>
+<td align="center" bgcolor="#F7F7FF"></td></tr>
+</table>
+<br>
+<u>Основные характеристики способов доставки</u>:<br><br>
+<table width="100%" border="0" cellspacing="1" cellpadding="2">
+<tr bgcolor="#EFEFFF" style="font-weight:bold">
+<td>Способ доставки</td>
+<td>Стоимость доставки</td>
+<td>Срок доставки*</td>
+<td>Возможные <a href="/shop/payment">способы оплаты</a></td></tr>
+<tr>
+<td colspan="4" bgcolor="#E5E5FF"><div class="lh1px"><img src="http://my-shop.ru/_all/empty.gif?partner=4336" border="0" width="100" height="1" alt=""></div></td></tr>
+<tr bgcolor="#F7F7FF">
+<td bgcolor="#EFEFFF">курьером My-shop.ru</td>
+<td>Москва, Санкт-Петербург, Ленинградская область, Ростов-на-Дону:<br>
+от 0 до 180 руб.;<br>
+ближнее Подмосковье: до 340 руб.<br>
+(зависит от <a href="http://my-shop.ru/my/helper_66?partner=4336">региона</a> и стоимости заказа)<br><br>
+<a href="http://my-shop.ru/my/helper_71?partner=4336">дополнительные курьерские службы</a></td>
+<td>0-2 рабочих дня</td>
+<td nowrap>наличный расчет<br>
+предоплата банковским переводом<br>
+предоплата Яндекс.Деньги<br>
+предоплата ROBOKASSA<br>
+предоплата почтовым переводом</td></tr>
+<tr>
+<td colspan="4" bgcolor="#E5E5FF"><div class="lh1px"><img src="http://my-shop.ru/_all/empty.gif?partner=4336" border="0" width="100" height="1" alt=""></div></td></tr>
+<tr bgcolor="#F7F7FF">
+<td bgcolor="#EFEFFF">cамовывоз</td>
+<td><a href="http://my-shop.ru/my/helper_70?partner=4336">см. в описании пунктов выдачи заказов</a></td>
+<td><a href="http://my-shop.ru/my/helper_70?partner=4336">см. в описании пунктов выдачи заказов</a></td>
+<td>наличный расчет<br>
+предоплата банковским переводом<br>
+предоплата Яндекс.Деньги<br>
+предоплата ROBOKASSA<br>
+предоплата почтовым переводом</td></tr>
+<tr>
+<td colspan="4" bgcolor="#E5E5FF"><div class="lh1px"><img src="http://my-shop.ru/_all/empty.gif?partner=4336" border="0" width="100" height="1" alt=""></div></td></tr>
+<tr bgcolor="#F7F7FF">
+<td bgcolor="#EFEFFF">Почта России</td>
+<td>от 60 руб.,<br>
+зависит в основном от региона и веса заказа (<a href="#1">подробнее см. ниже</a>)</td>
+<td>обычно 1-3 недели</td>
+<td>наложенный платеж<br>
+предоплата банковским переводом<br>
+предоплата Яндекс.Деньги<br>
+предоплата ROBOKASSA<br>
+предоплата почтовым переводом</td></tr>
+<tr>
+<td colspan="4" bgcolor="#E5E5FF"><div class="lh1px"><img src="http://my-shop.ru/_all/empty.gif?partner=4336" border="0" width="100" height="1" alt=""></div></td></tr>
+<tr bgcolor="#F7F7FF">
+<td bgcolor="#EFEFFF">курьером компании "TNT Express"</td>
+<td>от 2500 руб.,<br>
+зависит от страны и веса заказа</td>
+<td>обычно 1-5 рабочих дней</td>
+<td>предоплата банковским переводом<br>
+предоплата Яндекс.Деньги<br>
+предоплата ROBOKASSA<br>
+предоплата почтовым переводом</td></tr>
+<tr>
+<td colspan="4" bgcolor="#E5E5FF"><div class="lh1px"><img src="http://my-shop.ru/_all/empty.gif?partner=4336" border="0" width="100" height="1" alt=""></div></td></tr>
+</table>
+* Обратите внимание, что время доставки - это не время выполнения заказа. Время выполнения заказа складывается из <a href="http://my-shop.ru/my/helper_7?partner=4336">времени его формирования</a> и времени доставки.<br><br>
+
+<u>Подробное описание способов доставки</u>:
+<ol>
+
+<li><a name="0"></a><u>Доставка курьерской службой My-shop.ru</u>. Это наиболее быстрый (время доставки - 1-2 рабочих дня) и удобный способ доставки, однако наши курьеры доставляют заказы только по Москве, Подмосковью (до "малой бетонки"), Санкт-Петербургу, Ростову-на-Дону и некоторым городам Ленинградской области. Доставка осуществляется по рабочим дням (Пн.-Пт.) с 10:00 до 19:00, минимальный интервал - 4 часа.<br><br>
+Стоимость доставки заказов по Москве (в пределах МКАД и до 10 км за МКАД) составляет <b>180 руб</b>, по Подмосковью - от 180 до 340 руб., подробнее см. <a href="http://my-shop.ru/my/helper_66?partner=4336">здесь</a>. По Санкт-Петербургу и Ленинградской области - <b>180 руб</b>, по Ростову-на-Дону - <b>150 руб</b>. При заказе на определенную сумму (см. условия доставки в ваш населенный пункт) доставка осуществляется <b>бесплатно</b>!<br><br>
+Если доставку заказа не удается осуществить по вине получателя заказа (день, время и адрес доставки были согласованы с получателем, однако в согласованное время курьер не застал получателя по указанному адресу), повторная доставка оплачивается дополнительно.<br><br>
+Доставка тяжелых (от 20 кг) и/или крупногабаритных заказов осуществляется при наличии парковочного места на расстоянии не более 250 метров от подъезда. При отсутствии парковочного места на указанном расстоянии курьер связывается с получателем заказа по телефону и предлагает на выбор следующие варианты:<br>
+- получение заказа непосредственно у машины,<br>
+- организация проезда на территорию дома/предприятия или парковки ближе к подъезду без нарушения ПДД (ожидание не более 15 минут),<br>
+- перенос доставки на другой день и по другому адресу (повторная доставка оплачивается дополнительно).<br>
+Если въезд на территорию вашего дома/предприятия ограничен, вы можете уточнить номер машины курьера заранее, чтобы подготовить пропуск.<br><br>
+
+<li><a name="2"></a><u>Самовывоз</u>. <a href="http://my-shop.ru/my/helper_70?partner=4336">Подробное описание пунктов выдачи заказов</a>.<br><br>
+
+<li><a name="1"></a><u>Почтовая доставка ("Почта России")</u>. Этот вариант доставки - основной для заказчиков из большинства населенных пунктов Российской Федерации. <span style="background-color:#FFFAD8">Стоимость такой доставки зависит в основном от региона (расстояния) и веса товаров и определяется официальными тарифами "Почты России"</span>. Также на стоимость почтовой доставки влияет стоимость товаров: страховой сбор - 3.5%. В некоторых случаях стоимость почтовой доставки может существенно увеличиваться в определенное время года, это связано с сезонными транспортными ограничениями в некоторых регионах России. Если заказ не тяжелее двух килограмм, на стоимость его доставки может повлиять и тип заказываемых товаров, поскольку не все товары можно отправлять бандеролями. В стоимость доставки мы также включаем упаковку, а в случае использования наложенного платежа - еще и нашу наценку за использование этого способа оплаты (при использовании наложенного платежа стоимость заказа возрастет на 5%). Будучи относительно недорогим, такой способ доставки является наименее удобным: во-первых, большую роль играет медлительность почты (обычно почтовая доставка занимает 1-4 недели), а во-вторых, заказ не доставляется до вашей квартиры или офиса - за ним придется идти в местное почтовое отделение.<br><br>
+Заказ отправляется ценной бандеролью, если в его состав входит только книгопечатная продукция и вес заказа не превышает 2 кг. В остальных случаях заказы разбиваются на несколько бандеролей или отправляются ценными посылками.<br><br>
+В случае изменения почтовых тарифов во время формирования заказа, стоимость его доставки может быть изменена без дополнительного уведомления.<br><br>
+Обратите внимание, что <span style="background-color:#FFFAD8">по почтовым правилам</span> посылка или бандероль, не востребованная адресатом в течение одного месяца, возвращается отправителю. Срок хранения почтовых отправлений может быть продлен по заявлению адресата или его законного представителя. При неявке адресата за почтовым отправлением в течение 5 рабочих дней после доставки первичного извещения ему доставляется и вручается под расписку вторичное извещение. С адресата может взиматься плата за хранение почтового отправления в течение срока, составляющего более одного рабочего дня после вручения вторичного извещения с приглашением на объект почтовой связи для получения почтового отправления (не считая дня вручения). Размер платы за хранение определяется в соответствии с тарифами, устанавливаемыми операторами почтовой связи.<br>
+(Использована информация из "Правил оказания услуг почтовой связи", опубликованных на сайте "Почты России": http://www.russianpost.ru)<br><br>
+Внимание! Вы должны вскрыть упаковку и <span style="background-color:#FFFAD8">проверить заказ в Вашем почтовом отделении сразу после его получения</span>. В случае если Вы получили на почте бракованный товар или получили не то, что заказывали, обязательно составьте акт, в котором будет зафиксирован список содержимого полученной бандероли или посылки, факт повреждения товара и т.п. - просто опишите, что именно Вами получено. После этого попросите сотрудников почтового отделения заверить этот акт. При составлении акта не нужно отказываться от получения товара, просто свяжитесь с нами - мы постараемся найти удобный для Вас вариант решения проблемы. Без акта, составленного и заверенного на почтовом отделении, претензии не принимаются!<br><br>
+Стоимость доставки заказа, указанная при его оформлении, может отличаться от суммы реальных расходов магазина на его доставку по многим причинам, например:<br>
+- при оформлении заказа может быть неизвестен точный вес одного или нескольких товаров заказа,<br>
+- при оформлении заказа не известна точная дата его отправки (см. выше о сезонных транспортных ограничениях),<br>
+- при оформлении заказа не всегда известно как товары будут распределены по посылкам/бандеролям.<br>
+При сравнении стоимости доставки заказа с соответствующей суммой, указанной на посылке/бандероли, стоит также учитывать, что на посылке/бандероли указывается сумма без НДС, эта сумма не включает в себя расходы магазина на упаковку, а также наценку за использование наложенного платежа.<br>
+<span style="background-color:#FFFAD8">Вне зависимости от того, насколько и в какую сторону отличается сумма расходов на доставку заказа от расчетной стоимости доставки, указанной при оформлении заказа, перерасчет не производится: если расчетная стоимость доставки окажется выше расходов магазина, разница не возвращается; если расходы магазина превысят расчетную стоимость доставки, доплата также не требуется.</span><br><br>
+
+<li><a name="7"></a><u>Доставка курьером компании "TNT Express"</u>. Сейчас этот способ доставки является единственным для заказчиков из других стран. Доставка службой TNT Express обычно занимает 1-5 рабочих дней, подробнее о сроках см. <a href="http://my-shop.ru/help/tnt.xls?partner=4336" target="_blank">здесь</a>. К сожалению, этот способ доставки является очень дорогим. Кроме того, при получении заказа может потребоваться уплата государственной пошлины (в зависимости от законодательства страны получателя).
+
+</ol>
+<div class="cboth" style="height:2px"></div><hr class="help">
+<ul>
+<li><a href="http://my-shop.ru/my/helper_66?partner=4336">Доставка курьерской службой My-shop.ru по Москве и ближнему Подмосковью: тарифы</a>
+<li><a href="http://my-shop.ru/my/helper_70?partner=4336">Пункты выдачи заказов</a>
+<ul>
+<li><a href="http://my-shop.ru/my/helper_97?partner=4336">Пункты выдачи заказов на карте: Москва и Московская область</a>
+<li><a href="http://my-shop.ru/my/helper_98?partner=4336">Пункты выдачи заказов на карте: Санкт-Петербург и Ленинградская область</a>
+<li><a href="http://my-shop.ru/my/helper_99?partner=4336">Пункты выдачи заказов на карте: Россия</a>
+</ul>
+<li><a href="http://my-shop.ru/my/helper_71?partner=4336">Дополнительные курьерские службы</a>
+</ul></td></td></tr></table>

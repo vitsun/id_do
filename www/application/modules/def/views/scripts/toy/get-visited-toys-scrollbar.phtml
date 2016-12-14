@@ -1,0 +1,40 @@
+<?php
+	$count_toys_in_block = 3;
+?>
+<div class="scroll_toys" style="float: left;margin-top: 20px;border: 1px solid #9D9598;margin-left: 10px;padding: 10px 0px 20px 0px;">
+	<div style="font-size: 12px;margin: 0px 0px 10px 10px;font-weight: bold;">Вы смотрели</div>
+		<a class="prev browse left<?= (count($this->toys) > $count_toys_in_block ? '' : ' disabled')?>"></a>
+	<div class="scrollable">
+			   
+	  <div class="items">
+	  	<div class="item_slide">
+			<?php foreach ($this->toys as $key_toy => $toy) {	?>
+				<div class="visited_tovar_box">
+					<div>
+						<a rel="nofollow" href="<?php echo $this->url(array("action" => "detail", "controller" => "toy", "toy_id" => $toy['id']),null,true) ?>" title="<?= htmlspecialchars($toy['name']) ?>">
+							<img width=80 src="<?= $toy['picture'] ?>">
+						</a>
+					</div>
+					<div class="visited_tovar_box_descr">
+						<a rel="nofollow" href="<?php echo $this->url(array("action" => "detail", "controller" => "toy", "toy_id" => $toy['id']),null,true) ?>" title="<?= htmlspecialchars($toy['name']) ?>"><?= $toy['name'] ?></a>
+					</div>
+					<div class="visited_tovar_box_price">
+						<?= $toy['price'] ?> руб.
+					</div>
+					<div class="clear"></div>
+				</div>
+				<?php if ( (($key_toy + 1) % $count_toys_in_block) == 0) echo '</div><div class="item_slide">'; ?>
+			<?php } ?>
+			</div>
+	  </div>
+	   
+	</div>
+	
+	<a class="next browse right<?= (count($this->toys) > $count_toys_in_block ? '' : ' disabled')?>"></a>				
+</div>
+
+<script>
+$(function() {
+	$(".scrollable").scrollable();
+});
+</script>

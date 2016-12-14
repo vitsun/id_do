@@ -1,0 +1,11 @@
+User-agent: BLEXBot
+Disallow: /
+
+User-Agent: *
+Disallow: /shop/delivery
+Disallow: /shop/payment
+Disallow: /shop/basket
+Disallow: /put/list
+Disallow: /put/contacts
+Allow: /
+Sitemap: http://igrushki-detkam.ru/sitemap.xml
